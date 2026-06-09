@@ -184,6 +184,8 @@ def D():
 
     gs = mig[mig['destination_country'] == 'Germany'].copy()
     la = mig[mig['origin_country'].isin(LATAM)].copy()
+    if la.empty:
+        la = mig.copy()
     lg = mig[(mig['origin_country'].isin(LATAM)) &
              (mig['destination_country'] == 'Germany')].copy()
     gj = jobs[jobs['location'].str.contains(
@@ -683,8 +685,10 @@ def s_profiles(market='all'):
                 "academic credentials and above-average study abroad rates."),
     }
 
-    fos = d['la']['field_of_study'].value_counts().reset_index()
+    fos_counts = d['la']['field_of_study'].dropna().value_counts()
+    fos = fos_counts.reset_index()
     fos.columns = ['Field', 'Count']
+    fos = fos.head(10)
     fos['color'] = [BLUE if i == 0 else GRAY for i in range(len(fos))]
     f1 = go.Figure(go.Bar(
         x=fos['Count'], y=fos['Field'], orientation='h',
@@ -697,8 +701,10 @@ def s_profiles(market='all'):
     f1.update_layout(xaxis_title="Student Count",
                      yaxis=dict(autorange='reversed', showgrid=False))
 
-    r = d['la']['enrollment_reason'].value_counts().reset_index()
+    er_counts = d['la']['enrollment_reason'].dropna().value_counts()
+    r = er_counts.reset_index()
     r.columns = ['Reason', 'Count']
+    r = r.head(10)
     r['color'] = [BLUE if i == 0 else GRAY for i in range(len(r))]
     f2 = go.Figure(go.Bar(
         x=r['Count'], y=r['Reason'], orientation='h',
@@ -711,8 +717,10 @@ def s_profiles(market='all'):
     f2.update_layout(xaxis_title="Count",
                      yaxis=dict(autorange='reversed', showgrid=False))
 
-    lg = d['la']['language_proficiency_test'].value_counts().reset_index()
+    lp_counts = d['la']['language_proficiency_test'].dropna().value_counts()
+    lg = lp_counts.reset_index()
     lg.columns = ['Test', 'Count']
+    lg = lg.head(10)
     lg['color'] = lg['Test'].apply(
         lambda t: BLUE if any(x in t.lower() for x in ['goethe','testdaf','german'])
                   else GRAY)
