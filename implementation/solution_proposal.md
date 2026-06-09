@@ -36,7 +36,7 @@ Spanish-speaking Latin American students face a system that is:
 - Overwhelming without a trusted guide
 - Expensive to navigate through traditional consultants charging €150+/hour
 
-The first moment of value Cleo can deliver — before any paid engagement — is clarity. A student who understands their current position, what their realistic pathway is, and what the next 6 months look like is a student who trusts Cleo. That clarity is what UC-01 delivers, at scale, in under 5 minutes.
+The first moment of value Cleo can deliver before any paid engagement is clarity. A student who understands their current position, what their realistic pathway is, and what the next 6 months look like is a student who trusts Cleo. That clarity is what UC-01 delivers, at scale, in under 5 minutes.
 
 ---
 
