@@ -24,7 +24,7 @@ Cleo's current model is time-for-money. Every client requires:
 - 1–2 hours of document review and roadmap preparation
 - Ongoing follow-up and application tracking
 
-At 10 clients per month, that is 30–50 hours of non-scalable labour. At 50 clients, it requires a team. At 200 clients — the volume needed to make an international strategy profitable — it requires an operation Cleo cannot fund from early-stage revenue.
+At 10 clients per month, that is 30–50 hours of non-scalable labour. At 50 clients, it requires a team. At 200 clients — the volume needed to make an international strategy profitable, it requires an operation Cleo cannot fund from early-stage revenue.
 
 **AI adoption is not optional for this business model to work internationally. It is structural.**
 
