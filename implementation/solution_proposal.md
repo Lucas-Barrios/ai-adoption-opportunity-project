@@ -7,7 +7,7 @@
 
 ## Executive Summary
 
-This proposal recommends that Cleo invest in a focused, phased AI adoption strategy built around one primary use case: an **AI Germany Readiness Diagnostic Agent** (UC-01) — an intelligent intake and personalisation system that profiles Spanish-speaking Latin American students, scores their Germany readiness, and delivers a personalised pathway roadmap autonomously, with human consultant review before delivery.
+This proposal recommends that Cleo invest in a focused, phased AI adoption strategy built around one primary use case: an **AI Germany Readiness Diagnostic Agent** (UC-01) an intelligent intake and personalisation system that profiles Spanish-speaking Latin American students, scores their Germany readiness, and delivers a personalised pathway roadmap autonomously, with human consultant review before delivery.
 
 The investment case is straightforward: Cleo's business cannot scale on consultant hours alone. The Latin American → Germany advisory market is growing at 6% annually, Ausbildung vacancies exceed 600,000 unfilled positions, and no Spanish-language competitor has deployed AI in this niche. The window is open. The technology is ready. The risk of waiting exceeds the risk of investing.
 
