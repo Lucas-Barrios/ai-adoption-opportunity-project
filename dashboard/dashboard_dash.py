@@ -1,3 +1,4 @@
+import os
 import dash
 from dash import dcc, html, Input, Output
 from dash.exceptions import PreventUpdate
@@ -1475,6 +1476,7 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 app.title = "AI Adoption Market Intelligence | Kairos Advisory"
+server = app.server
 app.index_string = f"""<!DOCTYPE html>
 <html>
   <head>{{%metas%}}<title>{{%title%}}</title>{{%favicon%}}{{%css%}}
@@ -1774,4 +1776,5 @@ def update_progress(active):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8050)
+    port = int(os.environ.get('PORT', 8050))
+    app.run(host='0.0.0.0', port=port, debug=False)
