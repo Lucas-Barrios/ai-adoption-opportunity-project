@@ -11,7 +11,7 @@ This proposal recommends that Cleo invest in a focused, phased AI adoption strat
 
 The investment case is straightforward: Cleo's business cannot scale on consultant hours alone. The Latin American → Germany advisory market is growing at 6% annually, Ausbildung vacancies exceed 600,000 unfilled positions, and no Spanish-language competitor has deployed AI in this niche. The window is open. The technology is ready. The risk of waiting exceeds the risk of investing.
 
-The proposed MVP can be validated in **2 weeks at under €5,000** — making this one of the lowest-risk AI adoption decisions a small operator can make. The question Cleo needs to answer before committing to a full team build is not *"should we do this?"* It is *"does this convert students?"* — and that question costs €5,000 to answer, not €150,000.
+The proposed MVP can be validated in **2 weeks at under €5,000** making this one of the lowest-risk AI adoption decisions a small operator can make. The question Cleo needs to answer before committing to a full team build is not *"should we do this?"* It is *"does this convert students?"* and that question costs €5,000 to answer, not €150,000.
 
 ---
 
@@ -24,7 +24,7 @@ Cleo's current model is time-for-money. Every client requires:
 - 1–2 hours of document review and roadmap preparation
 - Ongoing follow-up and application tracking
 
-At 10 clients per month, that is 30–50 hours of non-scalable labour. At 50 clients, it requires a team. At 200 clients — the volume needed to make an international strategy profitable, it requires an operation Cleo cannot fund from early-stage revenue.
+At 10 clients per month, that is 30–50 hours of non-scalable labour. At 50 clients, it requires a team. At 200 clients, the volume needed to make an international strategy profitable, it requires an operation Cleo cannot fund from early-stage revenue.
 
 **AI adoption is not optional for this business model to work internationally. It is structural.**
 
