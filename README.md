@@ -1,6 +1,12 @@
-# AI Adoption Opportunity Project
+# AI Adoption Opportunity Project [![Deploy Status](https://img.shields.io/badge/dashboard-live%20on%20Render-brightgreen)](https://ai-adoption-opportunity-project.onrender.com)
 ## Market Research and Business Case — Education Consulting / LATAM → Germany
 **Student:** Lucas Barrios | **Programme:** Ironhack Berlin — AI & Integration Consulting | **Date:** June 2026
+
+## Live Dashboard
+
+🚀 **[View the live dashboard →](https://ai-adoption-opportunity-project.onrender.com)**
+
+> Built with Plotly Dash · Hosted on Render · 8 datasets · 7 sections
 
 ---
 
@@ -66,6 +72,11 @@ ai-adoption-opportunity-project/
 ---
 
 ## Quick Start
+
+> **Note:** The dashboard is deployed and accessible at
+> https://ai-adoption-opportunity-project.onrender.com
+> No local setup required to view it.
+> Follow the steps below only if you want to run it locally.
 
 ### 1. Clone and set up environment
 
@@ -210,6 +221,27 @@ Install with:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## Deployment
+
+The dashboard is deployed on Render.com as a Python web service.
+
+**Live URL:** https://ai-adoption-opportunity-project.onrender.com
+
+**Stack:**
+- Hosting: Render.com (free tier)
+- Server: Gunicorn 21.2.0
+- Start command: `gunicorn dashboard.dashboard_dash:server`
+- Python: 3.14.3
+- All 8 datasets committed to the repository and served directly
+
+**Note on free tier:** Render's free tier spins down after 15 minutes of inactivity. The first load after inactivity may take 30–60 seconds. Subsequent loads are fast.
+
+**To redeploy after changes:**
+1. Push to main branch on GitHub
+2. Render auto-deploys on every push to main
 
 ---
 

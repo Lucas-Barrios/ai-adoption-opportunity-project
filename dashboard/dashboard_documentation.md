@@ -234,6 +234,12 @@ dashboard_dash.py
 
 ## 8. Running the Dashboard
 
+### Live Version
+The dashboard is deployed at:
+**https://ai-adoption-opportunity-project.onrender.com**
+
+No setup required — open the URL in any browser.
+
 **Prerequisites:**
 ```bash
 pip install -r requirements.txt
