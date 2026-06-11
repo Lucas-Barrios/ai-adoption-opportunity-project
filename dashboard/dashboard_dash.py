@@ -1677,7 +1677,7 @@ def update_roi(conv_rate, ticket, scenario):
 
     scenario = scenario or 'solo'
     months = list(range(1, 13))
-    completions = [50,150,300,500,700,900,1100,1300,1500,1700,1900,2100]
+    completions = [0, 0, 30, 80, 130, 230, 260, 340, 420, 500, 580, 660]
     monthly_costs = SCENARIO_COSTS[scenario]
     cost = list(np.cumsum(monthly_costs))
     revenue = [round(c * (conv_rate/100) * ticket) for c in completions]
@@ -1704,9 +1704,8 @@ def update_roi(conv_rate, ticket, scenario):
                       annotation_text=f"Break-even: Month {breakeven}",
                       annotation_font_color=BLUE, annotation_font_size=10)
 
-    title = (f"At {conv_rate}% Conversion x EUR{ticket} Avg. Ticket — "
-             f"{'Break-even Month ' + str(breakeven) if breakeven else 'Break-even beyond Month 12'}"
-             f" — Month 12 Revenue: EUR{revenue[11]:,.0f}/month")
+    betext = f"Break-even: Month {breakeven}" if breakeven else "No break-even in 12 months"
+    title = f"{conv_rate}% Conversion · €{ticket} Avg. Ticket · {betext}"
     fig.update_layout(
         **CL(title, 320, legend=True, margin=dict(l=10,r=15,t=70,b=55))
     )
